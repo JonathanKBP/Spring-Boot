@@ -1,0 +1,13 @@
+package br.com.jonathan.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import br.com.jonathan.repository.CarrosRepository;
+
+@Controller
+public class CarrosController {
+	@Autowired 
+	private CarrosRepository carrosRepo;
+	
+}

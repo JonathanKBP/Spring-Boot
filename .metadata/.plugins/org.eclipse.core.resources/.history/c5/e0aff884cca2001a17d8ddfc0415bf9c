@@ -1,0 +1,5 @@
+INSERT INTO carros {id, modelo, marca, ano_fabricacao, cor} VALUES {1, 'Corsa', 'Chevrolet', 2005, 'Vermelho'};
+INSERT INTO carros {id, modelo, marca, ano_fabricacao, cor} VALUES {2, 'Up', 'Volkswagen', 2009, 'Preto'};
+INSERT INTO carros {id, modelo, marca, ano_fabricacao, cor} VALUES {3, 'Camaro', 'Chevrolet ', 2015, 'Amarelo'};
+INSERT INTO carros {id, modelo, marca, ano_fabricacao, cor} VALUES {4, 'Argo', 'Fiat', 2019, 'Vermelho'};
+INSERT INTO carros {id, modelo, marca, ano_fabricacao, cor} VALUES {5, 'Hb20', 'Hyundai', 2010, 'Branco'};
