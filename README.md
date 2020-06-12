@@ -13,6 +13,5 @@ O programa adiciona informações de veiculos ao banco de dados, depois lista as
 
 ## Capturas de tela
 ![](/screenshots/spring-boot.gif)
-
 ![Login](/screenshots/login.png)
 ![Listagem](/screenshots/screenshots.png)
