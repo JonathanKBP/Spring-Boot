@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"
+			rel="stylesheet" />
+		<link th:href="@{/webjars/bootstrap/css/bootstrap-theme.min.css}"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<div class="panel panel-default" style="margin: 10px">
+			<div class="panel-heading">
+				<h1 class="panel-title">Carros</h1>
+			</div>
+			<div class="panel-body">
+			<form class="form-inline" method="post" style="margin: 20px 0" th:action="@{/carros}" th:object="${carro}">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Modelo" th:field="*{modelo}"/>
+					<input type="text" class="form-control" placeholder="Marca" th:field="*{marca}"/>
+					<input type="text" class="form-control" placeholder="Ano de fabricação" th:field="*{anoFabricacao}"/>
+					<input type="text" class="form-control" placeholder="Cor" th:field="*{cor}"/>
+					<input type="text" class="form-control" placeholder="Combustivel" th:field="*{qtdLitro}"/>
+					<input type="text" class="form-control" placeholder="Autonomia por litros" th:field="*{kmL}"/>
+					<button type="submit" class="btn btn-primary">Adicionar</button>
+				</div>			
+			</form>
+				<table class="table table-striped table-hover">
+					<thead>
+						<tr>
+							<th>Modelo</th>
+							<th>Marca</th>
+							<th>Ano de fabricação</th>
+							<th>Cor</th>
+							<th>Autonomia</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="carro: ${carros}">
+							<td th:text="${carro.modelo}"></td>
+							<td th:text="${carro.marca}"></td>
+							<td th:text="${carro.anoFabricacao}"></td>
+							<td th:text="${carro.cor}"></td>
+							<td th:text="${carro.autonomia}"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
